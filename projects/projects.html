@@ -10,6 +10,13 @@
     <script src="https://kit.fontawesome.com/36f8e0d1bd.js" crossorigin="anonymous"></script>
     <!-- Jquerry -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+      .card{
+        background-color:#DCF5CC;
+      
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
@@ -49,11 +56,82 @@
         </div>
       </nav>
 
-    <div class="projects">
+    <div class="projects-intro">
         <h2 style="text-align: center;">Projects</h2>
-
+        <p style="text-align:center; padding: 0 10% 5% 10%;">
+          Explore my list of projects. This webpage will be continuosly updated as I add more works here.   
+        </p>
     </div>
+<!-- --------------------------------------- -->
 
+<div class="container pcards">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="msc_thesis_thumb.png" width="100%" height="200" style="border-radius: 1vh;">
+        <div class="card-body">
+          <p class="card-text">Master's thesis project: Calculations of magnon spectra 
+            utilizing linear spin wave theory in a ferromagnetic pyrochlore lattice.
+          </p>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary" 
+              onclick="window.open('https://airbendor890.github.io/my_cv_data_website/9thsem_report')">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="EDA_with_python.png" width="100%" height="200" style="border-radius: 1vh;">
+        <div class="card-body">
+          <p class="card-text">EDA with python. Pandas for data processing, and utilized Matplotlib and Seaborn to generate insightful visualizations</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"
+              onclick="window.open('https://github.com/airbendor890/data_Analysis_with_python_freecodecamp/blob/main/Data_Analysis_python.ipynb')">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="air_passenger.png" width="100%" height="200" style="border-radius: 1vh;">
+        <div class="card-body">
+          <p class="card-text">Time series Analysis. Classical decomposition, STL decomposition, Exponential smoothing with seasonality, SARIMA to an Air passenger data.</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"
+              onclick="window.open('https://github.com/airbendor890/ML_AUG/blob/main/Time_series_analysis_Air_passengers.ipynb')">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
+  
+  </div>
+</div>
+
+
+
+<!-- --------------------------------------- -->
     <div class="container footer">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p class="col-md-4 mb-0 text-body-secondary">@Haraprasad Dhal</p>

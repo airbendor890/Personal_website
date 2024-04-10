@@ -1,14 +1,16 @@
-body{
-    background: linear-gradient(73deg, #ae75f3, #67dfea);
-    background-size: 400% 400%;
-
-    animation: AnimationName 32s ease infinite;
-    height: 100%;
+body {
+    background-color: #EBF7E3 !important;
 }
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .footer{
     /* position: absolute; */
     bottom: 0%;
 }
+
 
 /* Home page css */
 .welcome{
@@ -17,16 +19,17 @@ body{
     justify-content: center;
     gap: 50px;
     align-items: center;
-    height: 500px;
+    height: 60vh;
+    text-align: center;
 }
 
 /* backgorund animation */
-.css-selector {
+/* .css-selector {
     background: linear-gradient(73deg, #6718c7, #67dfea);
     background-size: 400% 400%;
 
     animation: AnimationName 32s ease infinite;
-}
+} */
 
 @keyframes AnimationName {
     0%{background-position:0% 51%}
@@ -40,15 +43,15 @@ body{
     margin-top: 25px;
     font-size: 21px;
     /* text-align: center; */
-
-    animation: fadein 1s;
+    position: relative;
+    animation: fadein 1.5s;
     animation-timing-function: ease-in-out;
 }
 
 
 /* Fade in animation */
 @keyframes fadein {
-    from { opacity: 0.5; margin-top: -100px;}
+    from { opacity: 0.5; margin-top: -5vh;}
     to   { opacity: 1; }
 }
 
@@ -62,8 +65,8 @@ body{
     height: 100px;
     margin-top: -20px;
     border-radius: 50%;
-    animation: smile 2.5s;
-    animation-timing-function: ease-in-out;
+    animation: smile 3.5s;
+    animation-timing-function: ease-in;
 }
 
 /* smiley face animation */
@@ -72,7 +75,53 @@ body{
     to{border-radius: 50%;}
 }
 
-/* contact page css */
+.ball-container {
+    margin-top: 10px;
+    padding: 0;
+    width: 50vw;
+    height: 28vh;
+    margin-left: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid;
+    align-items: flex-end;
+  }
+  
+  .ball {
+    width: 4vw;
+    max-width: 20px;
+    height: 4vw;
+    max-height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 25vh;
+    /* transform: translateX(90vw); */
+  }
+
+  .logos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+    /* margin-bottom: 15vh; */
+  }
+
+  .topic{
+    margin-top: 10vh;
+  }
+
+  .logos > svg{
+    animation: inflate 2s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes inflate {
+    from{transform: scale(1);}
+    to{transform: scale(1.25);}
+}
+
+
+/* contact page css------------------------------------------------- */
 .contactme{
     display: flex;
     flex-direction: column;
@@ -88,13 +137,13 @@ body{
     animation-timing-function: ease-in-out;
 }
 
-/* project page css */
-.projects{
-    height: 500px;
+/* project page css-------------------------------------------------------- */
+.projects-intro{
+    height: auto;
 }
 
 
-/* Aboutme page css */
+/* Aboutme page css ---------------------------------------------------------*/
 .about{
     height:500px;
 }
